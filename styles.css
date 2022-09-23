@@ -1,0 +1,70 @@
+:root {
+    --bg-white: #fff;
+    --bg-grey: #95a5a6;
+    --data-blue: #0984e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: var(--bg-grey);
+}
+
+/* UTILITIES */
+
+.text-center {
+    text-align: center;
+}
+
+.svg-background {
+    background-color: var(--bg-white);
+}
+
+/* DATA */
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bg-data {
+    width: 5px;
+    background-color: var(--data-blue);
+    display: inline-block;
+}
+
+.bg-data:hover {
+    opacity: 0.2;
+}
+
+.bar {
+    fill: var(--data-blue);
+}
+
+.bar:hover {
+    fill: var(--bg-grey);
+}
+
+.bar-tooltip {
+    font-size: 15px;
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: var(--data-blue);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 0;
+    font-size: 15px;
+    
+}
